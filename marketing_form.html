@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Form</title>
+
+</head>
+<body>
+    <main>
+        <h2>Creating a new marketing Campaign</h2>
+        <form action="/url" id="campaign">
+            <label for="Name">Campaign Name</label>
+            <input type="text" class="text" id="name" placeholder="Enter campaign name" required maxlength="50">
+            <br><br>
+            <label for="Campaign type">Campaign TYpe:</label>
+            <select name="Campaign name" id="Campaign type" required>
+                <option value="">--Select Campaign Type--</option>
+                <option value="Search">Search ADS</option>
+                <option value="display">Display ADS</option>
+                <option value="video">Video ADS</option>
+                <option value="social">Social ADS</option>
+            </select>
+            <br><br>
+            <label for="budget">Budget:</label>
+            <input type="number" id="budget" placeholder="Enter the budget" name="budget" required min="1000" step="100">
+            <br><br>
+            <label for="startdate">Start Date</label>
+            <input type="date" name="startDate" id="startDate" required>
+            <button type="submit">Submit</button>
+            <br><br>
+            <label for="enddate">End Date</label>
+            <input type="date" name="endDate" id="endDate" required>
+            <button type="submit">Submit</button>
+            <br><br>
+            <label>Target Audience:</label>
+            <input type="checkbox" name="audi1" value="18-25">
+            <label for="audi1">18-25</label>
+            <input type="checkbox" name="audi2" value="26-35">
+            <label for="audi2">26-35</label>
+            <input type="checkbox" name="audi3" value="36-45">
+            <label for="audi3">36-45</label>
+            <input type="checkbox" name="audi4" value="46+">
+            <label for="audi4">above 45</label>
+            <br><br>
+            <label>Target Gender</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+            <br><br>
+            <label for="platform">Platform Advertising</label>
+            <select nmae="platform" id="platform" required multiple>
+                <option value="">--Select Platform--</option>
+                <option value="google">Google ADS</option>
+                <option value="fb">FB ADS</option>
+                <option value="insta">Instagram ADS</option>
+                <option value="linkedin">LinkedIn ADS</option>
+            </select>
+        </form>
+    </main>
+</body>
+</html>
